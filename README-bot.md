@@ -6,6 +6,7 @@ Envoie un **vocal**, un **audio**, une **vidéo**, une **note vidéo** ou un **G
 
 ## ✨ Fonctionnalités
 
+- 🎵 Reconnaissance via **Shazam** (aucune clé API à fournir)
 - 🎵 Reconnaissance du son dans un audio **ou** une vidéo (extraction via ffmpeg)
 - 🖼 Pochette de l'album + boutons Spotify / Apple Music / Deezer
 - 🔒 **Adhésion obligatoire** : sans avoir rejoint la **chaîne** *et* le **groupe**, impossible d'utiliser le bot (bouton « ✅ J'ai rejoint »)
@@ -19,7 +20,7 @@ Envoie un **vocal**, un **audio**, une **vidéo**, une **note vidéo** ou un **G
 | Variable | Description |
 |---|---|
 | `BOT_TOKEN` | token donné par [@BotFather](https://t.me/BotFather) |
-| `AUDD_API_TOKEN` | clé API de [audd.io](https://audd.io/) (reconnaissance musicale) |
+| `AUDD_API_TOKEN` | *(optionnel)* clé [audd.io](https://audd.io/) utilisée seulement en secours |
 | `ADMINS` | IDs Telegram des admins, séparés par des virgules |
 | `CREATOR_NAME` | nom affiché du créateur |
 | `CREATOR_URL` | lien du créateur (bouton `/start`) |
@@ -37,7 +38,6 @@ Envoie un **vocal**, un **audio**, une **vidéo**, une **note vidéo** ou un **G
 docker build -t shazam-bot .
 docker run \
   -e BOT_TOKEN=xxx \
-  -e AUDD_API_TOKEN=yyy \
   -e ADMINS=123456789 \
   -e CHANNEL_ID=@ma_chaine \
   -e GROUP_ID=@mon_groupe \
@@ -56,5 +56,5 @@ Le service expose un petit serveur HTTP sur `$PORT` pour le health check.
 
 ```bash
 pip install -r requirements.txt
-BOT_TOKEN=xxx AUDD_API_TOKEN=yyy python main.py
+BOT_TOKEN=xxx python main.py
 ```

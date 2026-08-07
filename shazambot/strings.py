@@ -61,7 +61,7 @@ ANALYZING = "🔎 <b>Analyse en cours…</b>\n🎧 J'écoute attentivement, pati
 
 NO_TOKEN = (
     "⚠️ <b>Service de reconnaissance non configuré</b>\n\n"
-    "L'administrateur doit renseigner la variable <code>AUDD_API_TOKEN</code>."
+    "Réessaie dans quelques instants."
 )
 
 TOO_BIG = (
