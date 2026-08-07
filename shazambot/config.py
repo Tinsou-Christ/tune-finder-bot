@@ -25,7 +25,7 @@ CREATOR_URL = _clean(os.environ.get('CREATOR_URL')) or 'https://t.me/Christus225
 CHANNEL_URL = _clean(os.environ.get('CHANNEL_URL')) or 'https://t.me/lifeCitychannel'
 GROUP_URL = _clean(os.environ.get('GROUP_URL')) or 'https://t.me/lifecity_anothergirl'
 
-CREATOR_NAME = _clean(os.environ.get('CREATOR_NAME')) or 'Chrustus'
+CREATOR_NAME = _clean(os.environ.get('CREATOR_NAME')) or 'Christus'
 
 # adhesion obligatoire : @nom_de_la_chaine / @nom_du_groupe (ou -100...)
 CHANNEL_ID = _clean(os.environ.get('CHANNEL_ID'))
