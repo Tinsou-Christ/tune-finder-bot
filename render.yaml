@@ -8,8 +8,9 @@ services:
     envVars:
       - key: BOT_TOKEN
         sync: false
-      - key: AUDD_API_TOKEN
+      - key: ADMINS
         sync: false
+
       - key: ADMINS
         sync: false
       - key: CREATOR_NAME
