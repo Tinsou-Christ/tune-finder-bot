@@ -21,11 +21,11 @@ ADMINS = _int_list(os.environ.get('ADMINS', ''))
 AUDD_API_TOKEN = _clean(os.environ.get('AUDD_API_TOKEN'))
 
 # liens affiches sur /start
-CREATOR_URL = _clean(os.environ.get('CREATOR_URL')) or 'https://t.me/Shadow_sekai'
-CHANNEL_URL = _clean(os.environ.get('CHANNEL_URL')) or 'https://t.me/Shadow_sekai'
-GROUP_URL = _clean(os.environ.get('GROUP_URL')) or 'https://t.me/Shadow_sekai'
+CREATOR_URL = _clean(os.environ.get('CREATOR_URL')) or 'https://t.me/Christus225'
+CHANNEL_URL = _clean(os.environ.get('CHANNEL_URL')) or 'https://t.me/lifeCitychannel'
+GROUP_URL = _clean(os.environ.get('GROUP_URL')) or 'https://t.me/lifecity_anothergirl'
 
-CREATOR_NAME = _clean(os.environ.get('CREATOR_NAME')) or 'Shadow Sekai'
+CREATOR_NAME = _clean(os.environ.get('CREATOR_NAME')) or 'Chrustus'
 
 # adhesion obligatoire : @nom_de_la_chaine / @nom_du_groupe (ou -100...)
 CHANNEL_ID = _clean(os.environ.get('CHANNEL_ID'))
