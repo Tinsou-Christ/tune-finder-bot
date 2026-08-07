@@ -270,9 +270,8 @@ async def on_media(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await reply(update, S.TOO_BIG.format(limit=config.MAX_FILE_MB))
         return
 
-    if not config.AUDD_API_TOKEN:
-        await reply(update, S.NO_TOKEN)
-        return
+
+
 
     user_id = update.effective_user.id
     db.add_search(user_id)
