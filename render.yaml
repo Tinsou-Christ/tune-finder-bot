@@ -1,0 +1,32 @@
+services:
+  - type: web
+    name: shazam-bot
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: AUDD_API_TOKEN
+        sync: false
+      - key: ADMINS
+        sync: false
+      - key: CREATOR_NAME
+        value: Shadow Sekai
+      - key: CREATOR_URL
+        value: https://t.me/Shadow_sekai
+      - key: CHANNEL_URL
+        value: https://t.me/Shadow_sekai
+      - key: GROUP_URL
+        value: https://t.me/Shadow_sekai
+      - key: CHANNEL_ID
+        sync: false
+      - key: GROUP_ID
+        sync: false
+      - key: DB_PATH
+        value: /var/data/bot.db
+    disk:
+      name: data
+      mountPath: /var/data
+      sizeGB: 1
